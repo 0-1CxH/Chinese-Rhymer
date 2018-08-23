@@ -1,24 +1,4 @@
 ﻿'''
-普通话押韵表
-一、佳麻　 a ia ua　　
-二、开来　 ai uai　　　　
-三、先寒　 an ian uan üan
-四、江阳　 ang iang uang　
-五、逍遥　 ao iao　　　　　
-六、国歌　 e o uo　　　
-七、灰微　 ei ui　　　
-八、森林　 en in un ün　
-九、冬青　 eng ing ong iong
-十、希奇（儿）i（er并入）　
-十一、诗词　i（整体认读）
-十二、别叠　ie (y)e 　
-十三、忧愁　ou iu　　　　
-十四、读书　u　　　　　
-十五、须臾　ü　　　　　　
-十六、绝学　üe　
-'''
-
-'''
 十、希奇（儿）i（er并入）　
 十一、诗词　i（整体认读）[zh ch sh z c s]
 '''
