@@ -15,7 +15,7 @@ Here is one example:
 
 
 Result:
->>>([[(5, 0), (5, 0)], [(3, 1), (13, 0)], [(5, 0), (9, 0)], [(2, 1), (11, 0)]], ['这个', '项 目', '设计', '编写'])
+>>>([[(5, 0), (5, 0)], [(3, 1), (13, 0)], [(5, 0), (9, 0)], [(2, 1), (11, 0)]], ['这个', '项目', '设计', '编写'])
 
 
 
@@ -46,6 +46,29 @@ Here is an example:
 
 >>> analyzeAFile("0001.txt","db.xlsx")
 
+## Search Module
+Search Module includes:
+### searchDB(chineseword, dbfile)
+This function mainly serves the query purpose :"Match words in Database<dbfile> whose Rhyme Coordinate(s) is/are same as the given Word<chineseword>."<br>
+Returned result is arranged like (searchRes,DoubleRhyme), "searchRes" contains all words that has same ending rhyme with the word, "DoubleRhyme" contains all words has at least two same ending rhymes with the word. <br>
+The search module is crude without much design, so the future versions would improve on more complex rhyme patterns.
+
+Here is an example:
+
+>>> searchDB("未来", "db.xlsx")
+
+
+Result:
+
+>>> ([('现在', 41), ('离开', 29), ('不再', 27), ('下来', 27), ('应该', 26), ('未来', 22), ('明白', 20), ('期待', 17), ('静下来', 15), ('醒来', 14), ('后来', 13), ('等待', 12), ('回来', 12), ('不在', 12), ('人海', 12), ('大海', 10), ('存在', 10), ('不该', 9), ('留在', 9), ('从来', 9), ('坐在', 9), ('没来', 8), ('苍白', 8),...
+...], ['没来', '未来', '北海'])
+
+i.e. ('现在', 41) means '现在' and "未来" has same rhyme, and was recorded for 41 times from what learnt so far.
+i.e. ['没来', '未来', '北海'] are at least double rhyme of "未来".
+
+
+### searchInterface.py
+This file is the GUI of the Search Module.
 
 
 ## Appendix
