@@ -18,7 +18,7 @@ def searchDB(chineseword, dbfile):
         curSheet = db[str(wordres[0])]
         searchRes = {}
         DoubleRhyme = []
-		# TODO: 三/四/五押、跳押等模式
+		# TODO: 三/四/五押、跳押、首字押等模式
         for row in curSheet:
             curw = row[0].value
             if curw==None:
