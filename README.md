@@ -9,22 +9,22 @@ Learning System has several main functions:
 Get the Rhyme Coordinate of a Chinese sentence. If more than one Chinese character is input, a list of Coordinates are returned.
 Rhyme Coordinate is the position of the Chinese YunMu(韵母) in the Mandarin Rhyme Table(普通话押韵表),which is listed below:
 
->一、佳麻　 a ia ua　　
-二、开来　 ai uai　　　　
-三、先寒　 an ian uan üan
-四、江阳　 ang iang uang　
-五、逍遥　 ao iao　　　　　
-六、国歌　 e o uo　　　
-七、灰微　 ei ui　　　
-八、森林　 en in un ün　
-九、冬青　 eng ing ong iong
-十、希奇（儿）i（er并入）　
-十一、诗词　i（整体认读）
-十二、别叠　ie (y)e 　
-十三、忧愁　ou iu　　　　
-十四、读书　u　　　　　
-十五、须臾　ü　　　　　　
-十六、绝学　üe
+>一、佳麻　 a ia ua　　<br>
+二、开来　 ai uai　　　　<br>
+三、先寒　 an ian uan üan <br>
+四、江阳　 ang iang uang　<br>
+五、逍遥　 ao iao　　　<br>　　
+六、国歌　 e o uo　　　<br>
+七、灰微　 ei ui　　　<br>
+八、森林　 en in un ün　<br>
+九、冬青　 eng ing ong iong <br>
+十、希奇（儿）i（er并入）　<br>
+十一、诗词　i（整体认读）<br>
+十二、别叠　ie (y)e 　<br>
+十三、忧愁　ou iu　　　　<br>
+十四、读书　u　　　　　<br>
+十五、须臾　ü　　　　　<br>　
+十六、绝学　üe <br>
 
 
 i.e.,the Rhyme Coordinate of 'ao' is (4,0).
