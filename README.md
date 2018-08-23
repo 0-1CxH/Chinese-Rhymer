@@ -51,7 +51,17 @@ As you may notice, "TransCode=020111" is defined by the API, meaning the playlis
 The Hibai also has API of web-crawling other music websites, please contact the Hibai for more information. <br>
 And my src code includes the API provided by NetEase itself, please contact the NetEase for more information.<br>
 
+Here is an example:
+
+>>> downloadLyricsOfAPlayList("313835828","0001.txt")
 
 
+### analyzeAFile(filename,database)
+After initiated an empty database (using Excel for convienence) with initEmptyDB(dbname), the xls/xlsx file is ready for storing analyse results. <br>
+"analyzeAFile()" uses lyrics text file and databse file as input, by analyzing LRC line by line using "analyzeSentence()" and record the result returned in specific workbook sheets.<br>
+This process consume so much time (Average: 30min/150songs).
 
 
+Here is an example:
+
+>>> analyzeAFile("0001.txt","db.xlsx")
