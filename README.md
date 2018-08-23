@@ -21,7 +21,7 @@ Result:
 
 As shown in the example, all Non-Chinese characters are ignored, and words whose length less than minLen=2 or more than maxLen=6 are also ignored.<br>
 
-*Rhyme Coordinate* is the position of the Chinese YunMu(韵母) in the Mandarin Rhyme Table(普通话押韵表),which is listed below:
+**Rhyme Coordinate** is the position of the Chinese YunMu(韵母) in the Mandarin Rhyme Table(普通话押韵表),which is listed below:
 
 >一、佳麻　 a ia ua　　<br>
 二、开来　 ai uai　　　　<br>
@@ -42,6 +42,15 @@ As shown in the example, all Non-Chinese characters are ignored, and words whose
 
 
 i.e.,the Rhyme Coordinate of 'ao' is (4,0).
+
+
+### downloadLyricsOfAPlayList(playlistid,filename)
+With playlist and filename input, the crawler download ALL lyrics from the assigned NetEase playlist.<br>
+This function is mainly based on getPlaylistInfoByHibaiAPI(id), which provides the information of all songs in a playlist. <br>
+As you may notice, "TransCode=020111" is defined by the API, meaning the playlist is from NetEase Music.<br>
+The Hibai also has API of web-crawling other music websites, please contact the Hibai for more information. <br>
+And my src code includes the API provided by NetEase itself, please contact the NetEase for more information.<br>
+
 
 
 

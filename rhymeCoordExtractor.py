@@ -1,18 +1,4 @@
-﻿'''
-十、希奇（儿）i（er并入）　
-十一、诗词　i（整体认读）[zh ch sh z c s]
-'''
-'''
-六、国歌　 e o uo　
-十二、别叠　ie (y)e [　y]
-'''
-'''
-十四、读书　u　　　　　
-十五、须臾　ü　[j q x y] // (v)
-'''
-
-
-rhymeTable = [['a','ia','ua'],['ai','uai'],['an','ian', 'uan'],['ang', 'iang', 'uang'],
+﻿rhymeTable = [['a','ia','ua'],['ai','uai'],['an','ian', 'uan'],['ang', 'iang', 'uang'],
               ['ao', 'iao'],['e', 'o', 'uo'],['ei', 'ui'],['en', 'in', 'un'],['eng', 'ing', 'ong', 'iong'],
               ['i'],['i'],['ie','e'],['ou','iu'],['u'],['u'],['ue']]
 allVowel = ['b','p','m','f','d','t','n','l','z','c','s','zh','ch','sh','r','s','t','g','k','h','j','q','x','y','w',' ']
