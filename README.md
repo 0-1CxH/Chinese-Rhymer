@@ -10,13 +10,18 @@ Get the Rhyme Coordinate of a Chinese sentence. If more than one Chinese charact
 With the API provided by Jieba and xpinyin, splitting sentences and get the original Pinyin is much easiler.<br>
 
 Here is one example:
-'''
->>>analyzeSentence("这个项目由0-1CxH设计和编写", minLen=2, maxLen=6, allMode=True)  
-Result:([[(5, 0), (5, 0)], [(3, 1), (13, 0)], [(5, 0), (9, 0)], [(2, 1), (11, 0)]], ['这个', '项 目', '设计', '编写'])
-'''
-As shown in the example, all Non-Chinese characters are ignored.<br>
 
-Rhyme Coordinate is the position of the Chinese YunMu(韵母) in the Mandarin Rhyme Table(普通话押韵表),which is listed below:
+>>>analyzeSentence("这个项目由0-1CxH设计和编写", minLen=2, maxLen=6, allMode=True)  
+
+
+Result:
+>>>([[(5, 0), (5, 0)], [(3, 1), (13, 0)], [(5, 0), (9, 0)], [(2, 1), (11, 0)]], ['这个', '项 目', '设计', '编写'])
+
+
+
+As shown in the example, all Non-Chinese characters are ignored, and words whose length less than minLen=2 or more than maxLen=6 are also ignored.<br>
+
+*Rhyme Coordinate* is the position of the Chinese YunMu(韵母) in the Mandarin Rhyme Table(普通话押韵表),which is listed below:
 
 >一、佳麻　 a ia ua　　<br>
 二、开来　 ai uai　　　　<br>
