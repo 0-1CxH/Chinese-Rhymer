@@ -21,6 +21,35 @@ Result:
 
 As shown in the example, all Non-Chinese characters are ignored, and words whose length less than minLen=2 or more than maxLen=6 are also ignored.<br>
 
+
+
+
+### downloadLyricsOfAPlayList(playlistid,filename)
+With playlist and filename input, the crawler download ALL lyrics from the assigned NetEase playlist.<br>
+This function is mainly based on getPlaylistInfoByHibaiAPI(id), which provides the information of all songs in a playlist. <br>
+As you may notice, "TransCode=020111" is defined by the API, meaning the playlist is from NetEase Music.<br>
+The Hibai also has API of web-crawling other music websites, please contact the Hibai for more information. <br>
+And my src code includes the API provided by NetEase itself, please contact the NetEase for more information.<br>
+
+Here is an example:
+
+>>> downloadLyricsOfAPlayList("313835828","0001.txt")
+
+
+### analyzeAFile(filename,database)
+After initiated an empty database (using Excel for convienence) with "initEmptyDB(dbname)", the xls/xlsx file is ready for storing analyse results. <br>
+"analyzeAFile()" uses lyrics text file and databse file as input, by analyzing LRC line by line using "analyzeSentence()" and record the result returned in specific workbook sheets.<br>
+This process consume so much time (Average: 30min/150songs).
+
+
+Here is an example:
+
+>>> analyzeAFile("0001.txt","db.xlsx")
+
+
+
+## Appendix
+
 **Rhyme Coordinate** is the position of the Chinese YunMu(韵母) in the Mandarin Rhyme Table(普通话押韵表),which is listed below:
 
 >一、佳麻　 a ia ua　　<br>
@@ -42,26 +71,3 @@ As shown in the example, all Non-Chinese characters are ignored, and words whose
 
 
 i.e.,the Rhyme Coordinate of 'ao' is (4,0).
-
-
-### downloadLyricsOfAPlayList(playlistid,filename)
-With playlist and filename input, the crawler download ALL lyrics from the assigned NetEase playlist.<br>
-This function is mainly based on getPlaylistInfoByHibaiAPI(id), which provides the information of all songs in a playlist. <br>
-As you may notice, "TransCode=020111" is defined by the API, meaning the playlist is from NetEase Music.<br>
-The Hibai also has API of web-crawling other music websites, please contact the Hibai for more information. <br>
-And my src code includes the API provided by NetEase itself, please contact the NetEase for more information.<br>
-
-Here is an example:
-
->>> downloadLyricsOfAPlayList("313835828","0001.txt")
-
-
-### analyzeAFile(filename,database)
-After initiated an empty database (using Excel for convienence) with initEmptyDB(dbname), the xls/xlsx file is ready for storing analyse results. <br>
-"analyzeAFile()" uses lyrics text file and databse file as input, by analyzing LRC line by line using "analyzeSentence()" and record the result returned in specific workbook sheets.<br>
-This process consume so much time (Average: 30min/150songs).
-
-
-Here is an example:
-
->>> analyzeAFile("0001.txt","db.xlsx")
