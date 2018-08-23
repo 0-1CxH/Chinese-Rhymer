@@ -1,4 +1,5 @@
 # Chinese Rhymer -- Build your own rhyming dictionary from the source you like
+
 This project includes two main parts: the Learning System and the Search Module.
 The Learning System is responsible for downloading and analyzing the text, which can be lyrics, poetry lines or any text for the Rhyme Database to record. 
 After building the Rhyme Database, the Search Module returns the result of matching the rhyme pattern of input keyword with words in the database.
@@ -40,7 +41,7 @@ Here is an example:
 ### analyzeAFile(filename,database)
 After initiated an empty database (using Excel for convienence) with "initEmptyDB(dbname)", the xls/xlsx file is ready for storing analyse results. <br>
 "analyzeAFile()" uses lyrics text file and databse file as input, by analyzing LRC line by line using "analyzeSentence()" and record the result returned in specific workbook sheets.<br>
-This process consume so much time (Average: 30min/150songs).
+This process consume so much time (Average: 2000 lines/hour or 700 characters/min).
 
 
 Here is an example:
@@ -52,7 +53,8 @@ Search Module includes:
 ### searchDB(chineseword, dbfile)
 This function mainly serves the query purpose :"Match words in Database<dbfile> whose Rhyme Coordinate(s) is/are same as the given Word<chineseword>."<br>
 Returned result is arranged like (searchRes,DoubleRhyme), "searchRes" contains all words that has same ending rhyme with the word, "DoubleRhyme" contains all words has at least two same ending rhymes with the word. <br>
-The search module is crude without much design, so the future versions would improve on more complex rhyme patterns.
+The search module is crude without much design, so the future versions would improve on more complex rhyme patterns.<br>
+For convienence all database files this project use are xlsx format.<br>
 
 Here is an example:
 
@@ -95,3 +97,4 @@ This file is the GUI of the Search Module.
 
 
 i.e.,the Rhyme Coordinate of 'ao' is (4,0).
+
