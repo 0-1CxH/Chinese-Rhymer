@@ -13,18 +13,18 @@ Rhyme Coordinate is the position of the Chinese YunMu(韵母) in the Mandarin Rh
 二、开来　 ai uai　　　　<br>
 三、先寒　 an ian uan üan <br>
 四、江阳　 ang iang uang　<br>
-五、逍遥　 ao iao　　　<br>　　
+五、逍遥　 ao iao　<br>
 六、国歌　 e o uo　　　<br>
 七、灰微　 ei ui　　　<br>
 八、森林　 en in un ün　<br>
-九、冬青　 eng ing ong iong <br>
+九、冬青　 eng ing ong iong   <br>
 十、希奇（儿）i（er并入）　<br>
 十一、诗词　i（整体认读）<br>
 十二、别叠　ie (y)e 　<br>
-十三、忧愁　ou iu　　　　<br>
-十四、读书　u　　　　　<br>
-十五、须臾　ü　　　　　<br>　
-十六、绝学　üe <br>
+十三、忧愁　ou iu　　　<br>
+十四、读书　u　　<br>
+十五、须臾　ü　　　<br>
+十六、绝学　üe     <br>
 
 
 i.e.,the Rhyme Coordinate of 'ao' is (4,0).
