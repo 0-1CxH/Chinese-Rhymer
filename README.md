@@ -3,8 +3,6 @@ This project includes two main parts: the Learning System and the Search Module.
 The Learning System is responsible for downloading and analyzing the text, which can be lyrics, poetry lines or any text for the Rhyme Database to record. 
 After building the Rhyme Database, the Search Module returns the result of matching the rhyme pattern of input keyword with words in the database.
 
-[TOC]
-
 
 ## Learning System
 Learning System has several main functions:
@@ -63,8 +61,8 @@ Here is an example:
 
 Result:
 
->>> ([('现在', 41), ('离开', 29), ('不再', 27), ('下来', 27), ('应该', 26), ('未来', 22), ('明白', 20), ('期待', 17), ('静下来', 15), ('醒来', 14), ('后来', 13), ('等待', 12), ('回来', 12), ('不在', 12), ('人海', 12), ('大海', 10), ('存在', 10), ('不该', 9), ('留在', 9), ('从来', 9), ('坐在', 9), ('没来', 8), ('苍白', 8),...
-<br>(此处省略其他结果)...], ['没来', '未来', '北海'])
+>>> ([('现在', 41), ('离开', 29), ('不再', 27), ('下来', 27), ('应该', 26), ('未来', 22), ('明白', 20), ('期待', 17), ('静下来', 15), ('醒来', 14), ('后来', 13), ('等待', 12), ('回来', 12), ('不在', 12), ('人海', 12), ('大海', 10), ('存在', 10), ('不该', 9), ('留在', 9), ('从来', 9), ('坐在', 9), ('没来', 8), ('苍白', 8),
+<br>...此处省略其他结果...<br>], ['没来', '未来', '北海'])
 
 i.e. ('现在', 41) means '现在' and "未来" has same rhyme, and was recorded for 41 times from what learnt so far.
 i.e. ['没来', '未来', '北海'] are at least double rhyme of "未来".
