@@ -1,4 +1,4 @@
-# Chinese Rhymer
+# Chinese Rhymer -- Build your own rhyming dictionary from the source you like
 This project includes two main parts: the Learning System and the Search Module.
 The Learning System is responsible for downloading and analyzing the text, which can be lyrics, poetry lines or any text for the Rhyme Database to record. 
 After building the Rhyme Database, the Search Module returns the result of matching the rhyme pattern of input keyword with words in the database.
